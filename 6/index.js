@@ -20,7 +20,8 @@ const findStart = (numUnique) => (lines) => {
       if (buffer.length > numUnique) {
         buffer.shift()
       }
-
+      
+      // Much easier to just use a Set here instead
       if (buffer.length === numUnique) {
         // Check all unique
         let hasDupe = false
